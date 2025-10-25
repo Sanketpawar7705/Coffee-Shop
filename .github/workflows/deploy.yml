@@ -31,11 +31,11 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
-      # 3. Upload site files
+      # 3. Upload site files (everything in repo root)
       - name: Upload site files
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .   # Root of your static site (index.html, CSS, JS, images)
+          path: .   # Make sure all files (index.html, CSS, JS, images) are in repo root
 
       # 4. Deploy to GitHub Pages
       - name: Deploy to GitHub Pages 🚀
